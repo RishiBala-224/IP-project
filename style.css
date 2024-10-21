@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #881818;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    2px 2px 0 rgb(0, 0, 0),
+    -2px 2px 0 rgb(0, 0, 0), 
+    2px -2px 0 rgb(0, 0, 0),
+    -2px -2px 0 rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+header nav {
+    display: flex;
+
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-flex {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('bakery.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(42, 24, 24);
+    text-shadow: 
+    2px 2px 0 rgb(230, 221, 221),
+    -2px 2px 0 rgb(230, 221, 221), 
+    2px -2px 0 rgb(230, 221, 221),
+    -2px -2px 0 rgb(230, 221, 221);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+/* Featured Items Styles */
+.featured-items {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-items h2 {
+    font-size: 2em;
+}
+
+.item {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+}
+
+.menu-item img {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Button Styles */
+button {
+    background-color: #881818;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #dd4242;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative; /* Adjusted from absolute to fix footer positioning */
+}
+
+/* General Styles for About Section */
+/* General Styles for About Section */
+.abt {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    max-width: 800px; /* Limits the width of the paragraph for better readability */
+    margin: 0 auto; /* Centers the section on the page */
+    padding: 20px;
+    background-color: #fef9e7; /* Soft yellow background to match the bakery theme */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.abt p {
+    font-size: 1.1em;
+    color: #333;
+    text-align: justify; /* Justify text for neatness */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .abt {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+
+/* Contact Section Styles */
+.cnt {
+    max-width: 600px;  /* Limits the width of the contact section */
+    margin: 30px auto; /* Centers the section and adds vertical margin */
+    padding: 20px;     /* Adds space inside the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px;  /* Rounded corners for a smooth look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.cnt h3 {
+    font-size: 1.8em; /* Slightly larger than normal text */
+    color: #881818;   /* Matches the theme color */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.cnt p {
+    font-size: 1.1em; /* Text size for readability */
+    color: #333;      /* Darker text color */
+    text-align: left; /* Left aligns text */
+    margin-bottom: 10px; /* Space between lines */
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+    .cnt {
+        padding: 15px; /* Reduces padding on smaller screens */
+    }
+
+    .cnt h3 {
+        font-size: 1.5em; /* Adjusts font size for smaller screens */
+    }
+
+    .cnt p {
+        font-size: 1em; /* Adjusts paragraph text size */
+    }
+}
+
